@@ -1,0 +1,14 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+img {
+    margin: 10px;
+}
+.card-img-top {
+    max-width: 90%;
+    height: auto;
+    /* Maintain aspect ratio */
+    display: block;
+    /* Removes inline-block space */
+}
