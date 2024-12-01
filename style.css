@@ -1,6 +1,94 @@
-*{
-    margin: 0px;
-    padding: 0px;
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: fixed;
+    /* Fixes the navbar at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2000;
+    /* Ensures navbar is above other elements */
+    height: 60px;
+    /* Define navbar height */
+    background-color: #9c9595;
+}
+/* Navbar Adjustments */
+.navbar {
+    padding: 10px 20px;
+}
+
+.navbar .btn {
+    font-size: 14px;
+}
+
+.navbar-brand img {
+    object-fit: cover;
+    border: 2px solid white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Prevent Overlap with Content */
+body {
+    padding-top: 70px;
+    /* Adjust padding for fixed navbar height */
+}
+
+/* Navbar Adjustments */
+.navbar {
+    padding: 10px 20px;
+}
+
+.navbar .btn {
+    font-size: 14px;
+}
+
+.navbar-brand img {
+    object-fit: cover;
+    border: 2px solid white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Prevent Overlap with Content */
+body {
+    padding-top: 70px;
+    /* Adjust padding for fixed navbar height */
+}
+
+/* Center Navbar Links */
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.nav-link {
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .d-flex {
+        justify-content: center;
+    }
+}
+main {
+    margin-top: 80px;
+    /* Offset main content below the navbar height */
+    padding: 20px;
 }
 img {
     margin: 10px;
@@ -11,4 +99,80 @@ img {
     /* Maintain aspect ratio */
     display: block;
     /* Removes inline-block space */
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #007bff;
+}
+
+.footer-socials {
+    margin-top: 10px;
+}
+
+.footer-socials a {
+    color: #ffffff;
+    font-size: 18px;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-socials a:hover {
+    color: #007bff;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #4a4a4a;
+    padding-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer-title {
+        text-align: center;
+    }
+
+    .footer p,
+    .footer-links,
+    .footer-socials {
+        text-align: center;
+    }
 }

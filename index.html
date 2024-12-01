@@ -10,82 +10,149 @@
 </head>
 <body>
     <div>
-    <!-- Grey with black text -->
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top ">
-        <a class="navbar-brand" href="#">
-            <img src="bird.jpg" alt="Logo" style="width:40px;">
-        </a>
-        <ul class="navbar-nav justify-content-center">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Service</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Property</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-            </li>
-        </ul>
-    </nav>
-    </div>
-    <div class="container img-container">
-        <div class="row">
-            <div class="col-md-4 col-sm-6">
-                <div class="card" style="width:350px">
-                    <img class="card-img-top" src="images/house 1.jpg" alt="Card image">
-                    <div class="card-body">
-                        <h4 class="card-title">John Doe</h4>
-                        <p class="card-text">Some example text.</p>
-                        <a href="#" class="btn btn-primary">See Profile</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="card" style="width:350px">
-                    <img class="card-img-top" src="images/house 2.jpg" alt="Card image">
-                    <div class="card-body">
-                        <h4 class="card-title">John Doe</h4>
-                        <p class="card-text">Some example text.</p>
-                        <a href="#" class="btn btn-primary">See Profile</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="card" style="width:350px">
-                    <img class="card-img-top" src="images/house 3.jpg" alt="Card image">
-                    <div class="card-body">
-                        <h4 class="card-title">John Doe</h4>
-                        <p class="card-text">Some example text.</p>
-                        <a href="#" class="btn btn-primary">See Profile</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="card" style="width:350px">
-                    <img class="card-img-top" src="images/house 4.jpg" alt="Card image">
-                    <div class="card-body">
-                        <h4 class="card-title">John Doe</h4>
-                        <p class="card-text">Some example text.</p>
-                        <a href="#" class="btn btn-primary">See Profile</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <div class="card" style="width:350px">
-                    <img class="card-img-top" src="images/house 5.jpg" alt="Card image">
-                    <div class="card-body">
-                        <h4 class="card-title">John Doe</h4>
-                        <p class="card-text">Some example text.</p>
-                        <a href="#" class="btn btn-primary">See Profile</a>
-                    </div>
-                </div>
-            </div>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+            <div class="container">
+                <!-- Left: Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.jpg" alt="Logo" class="rounded-circle" style="width: 40px; height: 40px;">
+                </a>
 
+                <!-- Toggle Button for Mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar Content -->
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <!-- Center: Navigation Links -->
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Property</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+
+                    <!-- Right: Signup and Register Buttons -->
+                    <div class="d-flex ms-lg-auto mt-3 mt-lg-0">
+                        <button class="btn btn-primary btn-sm me-2">Sign Up</button>
+                        <button class="btn btn-outline-light btn-sm">Register</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card" style="width: 100%;">
+                    <img class="card-img-top" src="images/house 1.jpg" alt="House 1">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Crystal Heights Apartments</h4>
+                        <p class="card-text">Modern high-rise apartments offering luxury living with panoramic city views.</p>
+                        <a href="#" class="btn btn-primary">See Profile</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card" style="width: 100%;">
+                    <img class="card-img-top" src="images/house 2.jpg" alt="House 2">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Maplewood Villas</h4>
+                        <p class="card-text">Serene townhomes nestled in a lush, green neighborhood, ideal for families.</p>
+                        <a href="#" class="btn btn-primary">See Profile</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card" style="width: 100%;">
+                    <img class="card-img-top" src="images/house 3.jpg" alt="House 3">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Ocean Breeze Residences</h4>
+                        <p class="card-text">Beachfront condos with stunning sea views and access to private amenities.</p>
+                        <a href="#" class="btn btn-primary">See Profile</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card" style="width: 100%;">
+                    <img class="card-img-top" src="images/house 4.jpg" alt="House 4">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Golden Acres Estate</h4>
+                        <p class="card-text">Spacious countryside homes surrounded by sprawling landscapes and tranquility.</p>
+                        <a href="#" class="btn btn-primary">See Profile</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card" style="width: 100%;">
+                    <img class="card-img-top" src="images/house 5.jpg" alt="House 5">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Urban Crest Towers</h4>
+                        <p class="card-text">Contemporary apartments in the heart of the city, perfect for urban lifestyles.</p>
+                        <a href="#" class="btn btn-primary">See Profile</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <!-- About Section -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <h4 class="footer-title">About Us</h4>
+                        <p>We provide professional property management services, ensuring hassle-free management of your assets.
+                        </p>
+                    </div>
+        
+                    <!-- Quick Links -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <h4 class="footer-title">Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Properties</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Contact Section -->
+                    <div class="col-lg-4 col-md-12 col-sm-12 mb-4">
+                        <h4 class="footer-title">Contact Us</h4>
+                        <p><i class="fas fa-phone-alt"></i> +8801994568456</p>
+                        <p><i class="fas fa-envelope"></i> info@propertymanager.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Main Street, Dhaka, Bangladesh</p>
+                        <div class="footer-socials">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Footer Bottom -->
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Property Manager. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
 
 
 
